@@ -21,6 +21,9 @@
 
     <!-- anchge se cosi' ottengo tutti quelli che li hanno gia' compiuti e che devono ancora compierli ...
         qualcuno parla di INTERVAL -->
+        SELECT *
+        FROM `students`
+        WHERE 
 
 
 
@@ -30,7 +33,7 @@ laurea (286)
 
 SELECT * 
 FROM `courses` 
-WHERE `period` LIKE "I semestre"
+WHERE `period` LIKE "I semestre" <!-- in questo caso usare LIKE e = era la stessa cosa visto che non ho messo le percentuali   -->
 AND `year`= 1;
 
 
@@ -53,7 +56,7 @@ LIKE "%magistrale%";
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
-SELECT * 
+SELECT COUNT(*) AS `quanti_dipartimenti`
 FROM `departments`;
 
 
